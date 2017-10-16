@@ -1,0 +1,66 @@
+/* <THEME> */
+.pigmentum[data-theme=dark] .code-output{ /* ol element */
+    background-color:#353535;
+    color:#b2b2b2;
+    border-radius: 5px;
+}
+
+.pigmentum[data-theme=dark] .code-output li{ /* 'li' element, where each 'pre' is nested*/
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.pigmentum[data-theme=dark] .code-output li:hover{
+    background: #454545;
+}
+
+.pigmentum[data-theme=dark] .keywords{
+    color: orange;
+}
+
+.pigmentum[data-theme=dark] .misc.bracket{
+    color: red;
+}
+
+.pigmentum[data-theme=dark] .line-number{
+    background: #353535;
+}
+
+/* </THEME> */
+.pigmentum{
+    position: relative;
+    padding-right: 10px;
+}
+
+.pigmentum .code-output{ /* ol element */
+    padding: 6px 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.pigmentum .line-number{
+    position: absolute;
+    padding-left: 5px;
+    user-select: none;
+}
+
+.pigmentum .line-number:after{
+    content: '.'
+}
+
+.pigmentum{
+    display: block;
+}
+
+.pigmentum pre{ /* where each line of code is nested */
+    margin: 0 0 0 40px;
+    /*white-space: pre-wrap; */
+    /*white-space: -moz-pre-wrap;*/
+    /*white-space: -pre-wrap;   */
+    /*white-space: -o-pre-wrap;   */
+    /*word-wrap: break-word;*/
+}
+
+.pigmentum .code-output{ /* ol element */
+    max-width: 100%;
+    overflow: auto;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sololearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "build": "babel src -d lib"
+  },
+  "keywords": [],
+  "author": "jvitoroc",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  }
+}

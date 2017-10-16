@@ -1,0 +1,43 @@
+{
+    "keywords":["def", "in", "return", "for"],
+
+    "properties":["append"],
+    
+    "-RULES":{
+        "default":{
+            "both": ["[","]","(",")","{","}",".",",", "\n", " "]
+        },
+
+        "keywords":{
+            "default":{
+                "both": ["[","]","(",")","{","}",".",",", "\n", " "]
+            }
+        },
+
+        "properties":{
+            "default":{
+                "prev": ["."],
+                "flw": ["(", ")", "}", "{", "."]
+            }
+        },
+
+        "misc":{
+            "default": "ALL"
+        }
+    },
+
+    "misc":[
+        [",", "comma"],
+        [".", "dot"],
+        ["{", "curly"],
+        ["}", "curly"],
+        ["]", "bracket"],
+        ["[", "bracket"]
+    ],
+
+    "-COMMENT":{
+        "inline":"#"
+    },
+
+    "-STRING": "string"
+}
